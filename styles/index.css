@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.berkshire-swash-regular {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-sans-regular {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}  
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+}
+  
+p {
+text-align: justify;
+}
+
+table p {
+text-align: left;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+color: #007ad5;
+text-decoration: none;
+}
+
+a:unknown {
+color: #0051a2;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.quote {
+    font-weight: bold;
+}
+
+#profile-card {
+    border: 0;
+    border-radius: 0;
+    /* background-color: #F4ECE6;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1); */
+}
+
+#profile-card img {
+    width: 60%;
+    margin-bottom: 10px;
+
+}
+
+/* Carousel CSS */
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: to add a semi-transparent background */
+    color: white; /* Text color */
+  }
+
+/* Top-left positioning */
+.overlay.top-left {
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Top-right positioning */
+  .overlay.top-right {
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+    padding: 20px;
+  }
+  
+  /* Bottom-left positioning */
+  .overlay.bottom-left {
+    justify-content: end;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Bottom-right positioning */
+  .overlay.bottom-right {
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    padding: 20px;
+  }
+  
+  /* Center positioning */
+  .overlay.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  
+  
+  .overlay h1,
+  .overlay h3 {
+    margin: 0;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: add a background to the text */
+  }
+  
+  .overlay h1 {
+    font-size: 2rem; /* Adjust as needed */
+  }
+  
+  .overlay h3 {
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+
+  @media (max-width: 768px) { /* Adjust the max-width value as needed */
+    .overlay h1 {
+      font-size: 1rem; /* Smaller font size for small screens */
+      line-height: 1.2;  /* Adjust line-height for better fit */
+    }
+  
+    .overlay h3 {
+      font-size: 0.75rem; /* Smaller font size for small screens */
+      line-height: 1.2; /* Adjust line-height for better fit */
+    }
+  }
