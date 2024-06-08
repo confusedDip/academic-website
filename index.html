@@ -1,301 +1,391 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Link to the Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to the Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- Link to Custom css -->
-  <link href="styles/index.css" rel="stylesheet">
+    <!-- Link to Custom css -->
+    <link href="styles/index.css" rel="stylesheet">
 
-  <!-- Googlefonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
-  <!-- Feather Icon -->
-  <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
 
-  <title>Souradip Nath</title>
+    <title>Souradip Nath</title>
 
 </head>
 
 <body class="merriweather-sans-regular">
 
 
-  <!-- The Navigation Bar -->
-  <nav class="navbar navbar-expand sticky-top nav-underline">
+    <!-- The Navigation Bar -->
+    <nav class="navbar navbar-expand sticky-top nav-underline">
 
+        <div class="container">
+
+            <a class="navbar-brand berkshire-swash-regular quote" href="#">Souradip Nath</a>
+
+            <!-- The Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">CV</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Projects</a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a href="#contactModal" class="nav-link" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Contact Me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Profile Section -->
     <div class="container">
-      
-    <a class="navbar-brand berkshire-swash-regular quote" href="#">Souradip Nath</a>
-  
-    <!-- The Toggle Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Nav Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-  
-      <ul class="navbar-nav mb-2 mb-lg-0">
-  
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">About Me</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">CV</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Projects</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:snath8@asu.edu">Contact</a>
-          </li>
-  
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="row justify-content-center">
 
-  <!-- The Profile Section -->
-  <div class="container">
-    <div class="row justify-content-center">
-        
-        <!-- Profile Card -->
-        <div class="col-12 col-lg-4 mt-5 mb-3">
+            <!-- Profile Card -->
+            <div class="col-12 col-lg-4 mt-5 mb-3">
 
-            <div class="card text-center" id="profile-card">
-                <div class="card-body">
+                <div class="card text-center" id="profile-card">
+                    <div class="card-body">
 
-                    <!-- Profile Picture -->
-                    <img class="img-thumbnail rounded-circle" src="resource/souradip-nath.jpeg">
+                        <!-- Profile Picture -->
+                        <img class="img-thumbnail rounded-circle" src="resource/souradip-nath.jpeg">
 
-                    <!-- Name and Pronouns -->
-                    <h2 class="card-title">Souradip Nath</h2>
-                    <h4 class="text-muted">(he/him)</h4>
+                        <!-- Name and Pronouns -->
+                        <h2 class="card-title">Souradip Nath</h2>
+                        <h4 class="text-muted">(he/him)</h4>
 
-                    <!-- Some more details -->
-                    <p class="text-center">
-                        Ph.D. Student
-                        <br>
-                        Access Control and Usable Cybersecurity
-                        <br>
-                        Arizona State University, Tempe
-                    </p>
-                    <!-- Email Address -->
-                    <p class="text-center"> 
-                        <a href="mailto:snath8@asu.edu">snath8@asu.edu</a>
-                    </p>
+                        <!-- Some more details -->
+                        <p class="text-center">
+                            Ph.D. Student
+                            <br>
+                            Access Control and Usable Cybersecurity
+                            <br>
+                            Arizona State University, Tempe
+                        </p>
+                        <!-- Email Address -->
+                        <p class="text-center">
+                            <a href="mailto:snath8@asu.edu">snath8@asu.edu</a>
+                        </p>
 
-                    <!-- Social Media Link Bar -->
-                    <nav class="navbar navbar-expand sticky-top nav-underline ">
+                        <!-- Social Media Link Bar -->
+                        <nav class="navbar navbar-expand sticky-top nav-underline ">
 
-                        <div class="container">
+                            <div class="container">
 
-                        <!-- Nav Links -->
-                        <div class="collapse navbar-collapse justify-content-center">
+                                <!-- Nav Links -->
+                                <div class="collapse navbar-collapse justify-content-center">
 
-                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                    <ul class="navbar-nav mb-2 mb-lg-0">
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/confusedDip/" target="_blank">
-                                    <i data-feather="github"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://github.com/confusedDip/" target="_blank">
+                                                <i data-feather="github"></i>
+                                            </a>
+                                        </li>
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://www.linkedin.com/in/souradip-nath/" target="_blank">
-                                    <i data-feather="linkedin"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://www.linkedin.com/in/souradip-nath/"
+                                                target="_blank">
+                                                <i data-feather="linkedin"></i>
+                                            </a>
+                                        </li>
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://x.com/SouradipNath04" target="_blank">
-                                    <i data-feather="twitter"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://x.com/SouradipNath04" target="_blank">
+                                                <i data-feather="twitter"></i>
+                                            </a>
+                                        </li>
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://instagram.com/_thenilesworld_/" target="_blank">
-                                    <i data-feather="instagram"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://instagram.com/_thenilesworld_/"
+                                                target="_blank">
+                                                <i data-feather="instagram"></i>
+                                            </a>
+                                        </li>
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="mailto:snath8@asu.edu" target="_blank">
-                                    <i data-feather="mail"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="mailto:snath8@asu.edu" target="_blank">
+                                                <i data-feather="mail"></i>
+                                            </a>
+                                        </li>
 
-                                <li class="nav-item">
-                                <a class="nav-link" href="https://unsplash.com/@anihero4" target="_blank">
-                                    <i data-feather="camera"></i>
-                                </a>
-                                </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://unsplash.com/@anihero4" target="_blank">
+                                                <i data-feather="camera"></i>
+                                            </a>
+                                        </li>
 
-                            </ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://topmate.io/souradip_nath/"
+                                                target="_blank">
+                                                <i data-feather="book-open"></i>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         </nav>
 
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Quote and Bio and Buttons -->
+            <div class="col-12 col-lg-5 mb-3 mt-5">
+                <h1 class="berkshire-swash-regular quote"><q>The only way to do great work is to love what you do.</q>
+                </h1>
+                <h3 class="mb-5"> &mdash; Steve Jobs</h3>
+
+                <p>
+                    Hello, I am a Ph.D. student at <a href="https://www.asu.edu/" target="_blank">Arizona State
+                        University</a>, specializing in Access Control and Usable Cybersecurity. My research focuses on
+                    designing and implementing secure systems that are not only robust against cyber threats but also
+                    applicable and accessible to a broad range of users. I am privileged to work under the guidance of
+                    <a href="https://www.public.asu.edu/%7Egahn1/" target="_blank"> Dr. Gail-Joon Ahn</a>, with the
+                    brighest peers at the <a href="https://sefcom.asu.edu/" target="_blank">Laboratory of Security
+                        Engineering for Future Computing (SEFCOM)</a> at Arizona State University. 
+                </p>
+
+                <p>
+                    If you want to discuss anything about Access Control and Usable cybersecurity, feel free to reach
+                    out!
+                </p>
+
+                <div class="mt-5 justify-content-start">
+                    <a type="button" class="btn btn-primary" href="resource/Souradip_Nath_Academic_CV.pdf"
+                        target="_blank" style="color: white;">Download CV</button></a>
+                    <a type="button" class="btn btn-outline-primary"
+                        href=https://scholar.google.com/citations?user=MKddxBQAAAAJ&hl=en&oi=sra"
+                        target="_blank">Publications</button></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Carousal -->
+    <div class="mt-5 mb-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./resource/1.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-left">
+                        <h1 class="berkshire-swash-regular quote"><q>Success is not the key to happiness. Happiness is
+                                the key to success. If you love what you are doing, you will be successful.</q></h1>
+                        <h3 class="mb-5"> &mdash; Albert Schweitzer</h3>
+                    </div>
+                    <div class="overlay bottom-right ">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/2.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-right">
+                        <h1 class="berkshire-swash-regular quote"><q>The only limit to our realization of tomorrow is
+                                our doubts of today.</q></h1>
+                        <h3 class="mb-5"> &mdash; Franklin D. Roosevelt</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/3.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-left">
+                        <h1 class="berkshire-swash-regular quote"><q>The only place where success comes before work is
+                                in the dictionary.</q></h1>
+                        <h3 class="mb-5"> &mdash; Vidal Sassoon</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/4.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-left">
+                        <h1 class="berkshire-swash-regular quote"><q>Perseverance is not a long race; it is many short
+                                races one after the other.</q></h1>
+                        <h3 class="mb-5"> &mdash; Walter Elliot</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/6.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-left">
+                        <h1 class="berkshire-swash-regular quote"><q>Success is not final, failure is not fatal: It is
+                                the courage to continue that counts.</q></h1>
+                        <h3 class="mb-5"> &mdash; Winston Churchill</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/7.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-left">
+                        <h1 class="berkshire-swash-regular quote"><q>The difference between ordinary and extraordinary
+                                is that little extra.</q></h1>
+                        <h3 class="mb-5"> &mdash; Jimmy Johnson</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./resource/8.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay top-right">
+                        <h1 class="berkshire-swash-regular quote"><q>Don’t watch the clock; do what it does. Keep
+                                going.</q></h1>
+                        <h3 class="mb-5"> &mdash; Sam Levenson</h3>
+                    </div>
+                    <div class="overlay bottom-right">
+                        <h3>&copy; Souradip Nath </h3>
+                    </div>
                 </div>
             </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <!-- Quote and Bio and Buttons -->
-        <div class="col-12 col-lg-5 mb-3 mt-5">
-            <h1 class="berkshire-swash-regular quote"><q>The only way to do great work is to love what you do.</q></h1>
-            <h3 class="mb-5"> &mdash; Steve Jobs</h3>
-
-            <p>
-            Hello, I am a Ph.D. student at <a href="https://www.asu.edu/" target="_blank">Arizona State University</a>, specializing in Access Control and Usable Cybersecurity. My research focuses on designing and implementing secure systems that are not only robust against cyber threats but also applicable and accessible to a broad range of users. I am privileged to work under the guidance of <a href="https://www.public.asu.edu/%7Egahn1/" target="_blank"> Dr. Gail-Joon Ahn</a>, with the brighest peers at the <a href="https://sefcom.asu.edu/" target="_blank">Laboratory of Security Engineering for Future Computing (SEFCOM)</a>   at Arizona State University. 
-            </p>
-
-            <p>
-            If you want to discuss anything about Access Control and Usable cybersecurity, feel free to reach out!
-            </p>
-
-            <div class="mt-5 justify-content-start">
-                <a type="button" class="btn btn-primary" href="resource/Souradip_Nath_Academic_CV.pdf" target="_blank" style="color: white;">Download CV</button></a>
-                <a type="button" class="btn btn-outline-primary" href=https://scholar.google.com/citations?user=MKddxBQAAAAJ&hl=en&oi=sra" target="_blank">Publications</button></a>
-            </div>
-            
-        </div>
-
     </div>
-</div>
 
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
-  <!-- Carousal -->
-  <div class="mt-5 mb-3">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-    </div>
-    <div class="carousel-inner">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                required>
+                            <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputText" class="form-label">Message</label>
+                            <textarea class="form-control" id="inputText"></textarea>
+                        </div>
+                    </form>
 
-        <div class="carousel-item active">
-            <img src="./resource/1.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-left">
-                <h1 class="berkshire-swash-regular quote"><q>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</q></h1>
-                <h3 class="mb-5"> &mdash; Albert Schweitzer</h3>
-            </div>
-            <div class="overlay bottom-right ">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-        
-        <div class="carousel-item">
-        <img src="./resource/2.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-right">
-                <h1 class="berkshire-swash-regular quote"><q>The only limit to our realization of tomorrow is our doubts of today.</q></h1>
-                <h3 class="mb-5"> &mdash; Franklin D. Roosevelt</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-        <img src="./resource/3.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-left">
-                <h1 class="berkshire-swash-regular quote"><q>The only place where success comes before work is in the dictionary.</q></h1>
-                <h3 class="mb-5"> &mdash; Vidal Sassoon</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-        
-        <div class="carousel-item">
-        <img src="./resource/4.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-left">
-                <h1 class="berkshire-swash-regular quote"><q>Perseverance is not a long race; it is many short races one after the other.</q></h1>
-                <h3 class="mb-5"> &mdash; Walter Elliot</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-        
-        <div class="carousel-item">
-        <img src="./resource/6.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-left">
-                <h1 class="berkshire-swash-regular quote"><q>Success is not final, failure is not fatal: It is the courage to continue that counts.</q></h1>
-                <h3 class="mb-5"> &mdash; Winston Churchill</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-        <img src="./resource/7.jpg" class="d-block w-100" alt="...">
-        <div class="overlay top-left">
-                <h1 class="berkshire-swash-regular quote"><q>The difference between ordinary and extraordinary is that little extra.</q></h1>
-                <h3 class="mb-5"> &mdash; Jimmy Johnson</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-        <img src="./resource/8.jpg" class="d-block w-100" alt="...">
-            <div class="overlay top-right">
-                <h1 class="berkshire-swash-regular quote"><q>Don’t watch the clock; do what it does. Keep going.</q></h1>
-                <h3 class="mb-5"> &mdash; Sam Levenson</h3>
-            </div>
-            <div class="overlay bottom-right">
-                <h3>&copy; Souradip Nath </h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitButton" data-bs-dismiss="modal">Submit</button>
+                </div>
             </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-</div>
 
-  <!-- Footer -->
-  <div class="container text-center">
-    &copy; 2024 by Souradip Nath
-  </div>
+
+    <!-- Footer -->
+    <div class="container text-center">
+        &copy; 2024 by Souradip Nath
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
     <!-- Feather Icons -->
     <script>
         feather.replace();
+        document.getElementById('submitButton').addEventListener('click', function () {
+            // Clear form fields
+            document.getElementById('contactForm').reset();
+        });
     </script>
-  </body>
+</body>
+
 </html>

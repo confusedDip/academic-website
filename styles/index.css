@@ -35,7 +35,8 @@ text-align: left;
 a:active,
 a:hover,
 a:link,
-a:visited {
+a:visited,
+a {
 color: #007ad5;
 text-decoration: none;
 }
@@ -43,6 +44,7 @@ text-decoration: none;
 a:unknown {
 color: #0051a2;
 }
+
 
 .navbar {
     background-color: white;
